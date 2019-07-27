@@ -1,0 +1,315 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+.mainbody {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 138, 5, 0.7),
+      rgba(243, 16, 232, 0.7)
+    ),
+    url(./img/baa15a98-4118-4cc8-a87a-ede296ac9991_rw_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainbody .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 50vh;
+  background-color: #ffffffdd;
+  width: 40vw;
+  border-radius: 20px;
+  padding: 20px;
+}
+.mainbody .container h1 {
+  height: 20%;
+  font-size: 60px;
+  line-height: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 138, 5, 0.7),
+    rgba(243, 16, 232, 0.7)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.container-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.gototable,
+.gotoregister {
+  transform: scale(0.7);
+}
+
+.gototable:hover,
+.gotoregister:hover {
+  transform: scale(1);
+}
+
+.inner-content {
+  overflow: hidden;
+}
+.inner-content a {
+  background: linear-gradient(
+    to right bottom,
+    rgba(243, 16, 232, 0.7),
+    rgba(255, 138, 5, 0.7)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  border-bottom: 4px solid #f9828d;
+  transition: all 3s;
+}
+
+.inner-content p {
+  transform: translateY(800%);
+  transition: all 0.3s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  opacity: 0;
+  color: #f9828d;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.gototable:hover .inner-content p,
+.gotoregister:hover .inner-content p {
+  transform: none;
+  opacity: 1;
+}
+
+.gototable:hover .inner-content a,
+.gotoregister:hover .inner-content a {
+  border-bottom: 4px solid #ffffffaa;
+}
+
+.tablebody,
+.registerbody {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 138, 5, 0.7),
+      rgba(243, 16, 232, 0.7)
+    ),
+    url(./img/baa15a98-4118-4cc8-a87a-ede296ac9991_rw_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tablecontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 80vh;
+  background-color: #ffffffbb;
+  width: 80vw;
+  border-radius: 40px;
+  padding: 30px;
+}
+
+.tablecontainer .btn {
+  margin-top: 30px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 138, 5, 0.7),
+    rgba(243, 16, 232, 0.7)
+  );
+  text-decoration: none;
+  text-decoration-color: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  border: 4px solid #f9828d;
+  transition: all 0.3s;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.tablecontainer .btn:hover {
+  box-shadow: 5px 5px 11px rgba(33, 33, 33, 0.4);
+  transform: scale(1.05);
+}
+
+.bg-gradient {
+  font-size: 1.1rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 138, 5, 0.4),
+    rgba(243, 16, 232, 0.4)
+  );
+  /* background-clip: text;
+  color: transparent; */
+  /* -webkit-background-clip: text; */
+}
+
+table {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+table {
+  /* font-size: 1.3rem; */
+}
+
+.edit,
+.delete {
+  cursor: pointer;
+  width: 2.5rem;
+}
+.edit:hover {
+  background-color: #16eb5670;
+}
+
+.delete:hover {
+  background-color: #fb1f0290;
+}
+
+.tablebody .paginate {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pagelist {
+  text-align: center;
+  background-color: yellow;
+  list-style: none;
+}
+.pagelist li {
+  float: left;
+  margin: 20px;
+}
+.pagelist li a {
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  color: white;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 138, 5, 0.4),
+    rgba(243, 16, 232, 0.4)
+  );
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+.pagelist li .active {
+  display: inline-block;
+  color: #f9828d;
+  background: none;
+  font-size: 18px;
+  cursor: not-allowed;
+}
+
+.registercontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 60vh;
+  background-color: #ffffffbb;
+  width: 40vw;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registercontainer form button {
+  margin-top: 30px;
+  background: none;
+  border: none;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 138, 5, 0.7),
+    rgba(243, 16, 232, 0.7)
+  );
+  /* border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text; */
+}
+
+.viewtable .btn {
+  margin-top: 100px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 138, 5, 0.7),
+    rgba(243, 16, 232, 0.7)
+  );
+  text-decoration: none;
+  text-decoration-color: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  border: 4px solid #f9828d;
+  transition: all 0.3s;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.viewtable .btn:hover {
+  box-shadow: 5px 5px 11px rgba(33, 33, 33, 0.4);
+  transform: scale(1.05);
+}
+.errorwarning {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 700;
+  color: white;
+}
+td button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+#editbutton,
+#deletebutton {
+  background: #dc3522;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+}
